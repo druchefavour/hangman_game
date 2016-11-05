@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<head>
+  <title>JAVASCRIPT HANGMAN GAME</title>
+  <style type="text/css"></style>
+    <link rel="stylesheet" type="text/css" href="assets/css/hangman_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- JQuery -->
+  <!--script src="https://code.jquery.com/jquery.js"></script-->
+</head>
+<body>
+<header>
+<div class="anime">
+<h1>WORLD SOCCER COMPETITION</h1>
+<div class="photobanner">
+<img class="soccer img-thumbnail" src="assets\images\soccer.jpg" alt="soccer player" width="110" height="110">
+<img class="img-thumbnail" src="assets\images\ball.png" alt="soccer ball" width="80" height="70">
+<img class="img-thumbnail" src="assets\images\mundia.jpg" alt="soccer cup" width="60" height="30">
+<img class="img-thumbnail" src="assets\images\hangman.png" alt="hangman" width="80" height="60">
+</div>
+</div>
+</header>
+<style>/*keyframe animations*/
+.anime {
+  height: 300px;
+  -webkit-animation: bannermove 30s linear infinite;
+     -moz-animation: bannermove 30s linear infinite;
+      -ms-animation: bannermove 30s linear infinite;
+       -o-animation: bannermove 30s linear infinite;
+          animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 900px;
+    }
+ 100% {
+    margin-left: 0px;
+    }
+    }
+    }
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 900px;
+ }
+ 100% {
+   margin-left: 0px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 900px;
+ }
+ 100% {
+   margin-left: 0px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 900px;
+ }
+ 100% {
+   margin-left: 0px;
+ }
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 900px;
+ }
+ 100% {
+   margin-left: 0px;
+ }
+}
+</style>
+
+<div class="wrapper">
+   <h1>Hangman</h1>
+    <h2>JavaScript Hangman Game</h2>
+    <p>Use the characters in the array to guess the word, or click clue to get a clue. </p>
+</div>
+<div class="wrapper">
+          <div id="buttons">
+          <audio id="music">
+             <source src="http://files.newmp3maza.com/files/sfd149/74362/Fifa%20World%20Cup%202014%20-%20(%202014)-(NewMp3Maza.com).mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+      </div>  
+        <p id="categoryName"></p>
+        <div id="hold">
+        </div>
+    <p id="myLeftGuesses"></p>
+    <p id="clue">Clue -</p>  
+    <img id="tongue" src="assets\images\head.png" alt="head of hangman" width="20" height="20"> 
+    <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+      <div class="container">
+      <button id="hint">Clue</button>
+      <button id="reset" style= "width:100">Play Again</button>
+
+<script type="text/javascript" src="assets/js/hangman.js"></script>
+</body>
+</html>
